@@ -1,0 +1,10 @@
+<h1>Hi!  This is your own Stupid Coach.  How can I help you? 🚀</h1>
+
+<form action="/answer" data-turbo="false">
+  <input type="text"
+          name="question"
+          placeholder="Ask your Stupid Coach.."
+          value = "<%= params[:question] %>">
+  <input type="submit"
+          value="Ask!">
+</form>

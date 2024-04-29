@@ -1,0 +1,13 @@
+<p>Now is <%= Time.now %></p>
+
+<h2>Here are the possible answers</h2>
+<ol>
+  <% @answers.each do |answer| %>
+  <li><%= answer%></li>
+  <%end%>
+</ol>
+
+  <h3>Your question was: </h3> <p><%=@question %></p>
+  <h3>Your Silly Coach Answer is:</h3> <p><%=@answer %></p>
+
+<%= link_to "Ask another question", ask_path %>
